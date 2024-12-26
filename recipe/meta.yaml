@@ -1,5 +1,5 @@
 {% set name = "mhfp" %}
-{% set version = "1.9.2" %}
+{% set version = "1.9.6" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bff6d38232502896abeab09224ac747390b4326d50114671068754ff22a09827
+  sha256: 646909a166d3b0e375c4497f653be45fe6e086ae9214e251b4a85c5ca9b6ad42
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
